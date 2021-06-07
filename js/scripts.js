@@ -9,14 +9,14 @@ $("document").ready(function(){
       $("input#favorite-pets-5").val(),
     ];
 
-    // const favoritePets = []
-    // favoritePets.push(pets[0], pets[1], pets[2])
     const favoritePets = pets.slice(0, 3);
+    $('.output ul').empty()
 
-    $("#favorite-0").text(favoritePets[0])
-    $("#favorite-1").text(favoritePets[1])
-    $("#favorite-2").text(favoritePets[2])
-
+    favoritePets.forEach(function (pet) {
+      let sentence = "I these are my fav pet" + " " + pet
+      $('.output ul').append('<li>' + sentence + '</li>')
+    })
     $('.output').show()
+    
   });
 });
