@@ -13,8 +13,10 @@ $("document").ready(function(){
     // favoritePets.push(pets[0], pets[1], pets[2])
     const favoritePets = pets.slice(0, 3);
 
-    $("#favorite-0").text(pets[0])
-    $("#favorite-1").text(pets[1])
-    $("#favorite-2").text(pets[2])
+    $("#favorite-0").text(favoritePets[0])
+    $("#favorite-1").text(favoritePets[1])
+    $("#favorite-2").text(favoritePets[2])
+
+    $('.output').show()
   });
 });
